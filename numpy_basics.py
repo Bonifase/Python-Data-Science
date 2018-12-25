@@ -43,6 +43,8 @@ print("Light: ", light)
 
 # Print out BMIs of all baseball players whose BMI is below 21
 print("Lightweight baseball players: ", bmi[light])
+
+
 print("Adding numpy list: ", np.array([True, 1, 2]) + np.array([3, 4, False]))
 
 # OUTPUT
@@ -51,3 +53,15 @@ print("Adding numpy list: ", np.array([True, 1, 2]) + np.array([3, 4, False]))
 # [3.90593892 5.90468111 4.82104461 4.0898751  3.73972876 3.99471026
 #  6.53072988 3.51534503]
 # Adding numpy list:  [4 5 2]
+
+# Print out the weight at index 2
+print("Subsetting NumPy Arrays at index 2: ", np_weight_kg[2])
+
+# Print out sub-array of np_height: index 3 up to and including index 7
+print("Subsetting NumPy Arrays from index 3 to 7: ", np_height_m[3:7])
+
+# Print out the weight at index 3
+print("Subsetting NumPy Arrays at index 3: ", np_weight_kg[3])
+
+# Print out sub-array of np_height: index 6 up to and including index 7
+print("Subsetting NumPy Arrays from index 6 to 7: ", np_height_m[6:7])
