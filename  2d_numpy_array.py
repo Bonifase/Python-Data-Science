@@ -43,9 +43,13 @@ conversion = np.array([0.0254, 0.453592])
 print("2D Multiply Arithmetic: ", np_baseball * conversion)
 
 # Explore the baseball data
-# Because the mean and median are so far apart, you decide to complain to the MLB. They find the error and send the corrected data over to you. It's again available as a 2D Numpy array np_baseball, with three columns.
+# Because the mean and median are so far apart,
+# you decide to complain to the MLB.
+# They find the error and send the corrected data over to you.
+# It's again available as a 2D Numpy array np_baseball, with three columns.
 
-# The Python script on the right already includes code to print out informative messages with the different summary statistics.
+# The Python script on the right already includes code
+# to print out informative messages with the different summary statistics.
 avg = np.mean(np_baseball[:, 0])
 print("Average: " + str(avg))
 
@@ -62,11 +66,17 @@ corr = np.corrcoef(np_baseball[:, 0], np_baseball[:, 1])
 print("Correlation: " + str(corr))
 
 
-# Convert heights and positions, which are regular lists, to numpy arrays. Call them np_heights and np_positions.
-# Extract all the heights of the goalkeepers. You can use a little trick here: use np_positions == 'GK' as an index for np_heights. Assign the result to gk_heights.
-# Extract all the heights of all the other players. This time use np_positions != 'GK' as an index for np_heights. Assign the result to other_heights.
-# Print out the median height of the goalkeepers using np.median(). Replace None with the correct code.
-# Do the same for the other players. Print out their median height. Replace None with the correct code.
+# Convert heights and positions,
+# which are regular lists, to numpy arrays.
+# Call them np_heights and np_positions.
+# Extract all the heights of the goalkeepers.
+# Extract all the heights of all the other players.
+# This time use np_positions != 'GK' as an index for np_heights.
+# Assign the result to other_heights.
+# Print out the median height of the goalkeepers
+# using np.median(). Replace None with the correct code.
+# Do the same for the other players.
+# Print out their median height. Replace None with the correct code.
 
 positions = ['GK', 'M', 'A', 'D']
 heights = [191, 184, 185, 180]
