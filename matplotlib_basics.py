@@ -19,3 +19,24 @@ plt.scatter(year, pop)
 
 # Show plot
 plt.show()
+
+# Build a histogram
+# Create histogram of pop data
+plt.hist(pop)
+
+# Display histogram
+plt.show()
+
+# Build histogram with 5 bins
+plt.hist(pop, bins=5)
+
+# Show and clear plot
+plt.show()
+plt.clf()
+
+# Build histogram with 20 bins
+plt.hist(pop, bins=20)
+
+# Show and clear plot again
+plt.show()
+plt.clf()
