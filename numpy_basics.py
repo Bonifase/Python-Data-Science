@@ -29,3 +29,25 @@ np_weight_kg = np.array(weight_lb) * 0.453592
 # Calculate the BMI: bmi
 bmi = np_weight_kg / np_height_m ** 2
 print(bmi)
+
+# Calculate the BMI: bmi
+np_height_m = np.array(height_in) * 0.0254
+np_weight_kg = np.array(weight_lb) * 0.453592
+bmi = np_weight_kg / np_height_m ** 2
+
+# Create the light array
+light = bmi < 21
+
+# Print out light
+print("Light: ", light)
+
+# Print out BMIs of all baseball players whose BMI is below 21
+print("Lightweight baseball players: ", bmi[light])
+print("Adding numpy list: ", np.array([True, 1, 2]) + np.array([3, 4, False]))
+
+# OUTPUT
+# Light:  [ True  True  True  True  True  True  True  True]
+# Lightweight baseball players:
+# [3.90593892 5.90468111 4.82104461 4.0898751  3.73972876 3.99471026
+#  6.53072988 3.51534503]
+# Adding numpy list:  [4 5 2]
