@@ -54,3 +54,33 @@ cars = pd.read_csv('cars.csv', index_col=0)
 
 # Print out cars
 print("cars", cars)
+
+# Square brackets
+# Print out country column as Pandas Series
+print(cars['Make'])
+
+# Print out country column as Pandas DataFrame
+print(cars[['Make']])
+
+# Print out DataFrame with country and drives_right columns
+print(cars[['Make', 'Model']])
+
+# Print out first 3 observations
+print(cars[0:3])
+
+# Print out fourth, fifth and sixth observation
+print(cars[3:6])
+
+
+# loc and iloc (1)
+# Print out observation for Japan
+print(cars.iloc[2])
+
+# Print out observations for Australia and Egypt
+print(cars.loc[[2O12, 2013]])
+
+# Print out drives_right value of Morocco
+print(cars.iloc[5, 2])
+
+# Print sub-DataFrame
+print(cars.loc[['RU', 'MOR'], ['Make', 'Size']])
