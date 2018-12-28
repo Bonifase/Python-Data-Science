@@ -49,5 +49,8 @@ print(cars)
 # Import the cars.csv data: cars
 cars = pd.read_csv('cars.csv')
 
+# Fix import by including index_col
+cars = pd.read_csv('cars.csv', index_col=0)
+
 # Print out cars
 print("cars", cars)
